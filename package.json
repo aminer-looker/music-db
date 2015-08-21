@@ -1,0 +1,33 @@
+{
+  "name": "music-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "Andrew Miner",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coffee-script": "^1.9.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "crafting-guide-common": "^1.5.1",
+    "promise-mysql": "^1.0.0",
+    "underscore": "^1.8.3",
+    "when": "^3.7.3"
+  }
+}
