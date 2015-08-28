@@ -1,5 +1,6 @@
 This repository contains code to scrape the [Classical Music Database](http://www.classicalmusicdb.com) and dump the
-contents into a local MySQL database named "music".
+contents into a local MySQL database named "music".  It also contains the LookML definitions to view the database in
+Looker.
 
 ### Setup ###
 
