@@ -67,9 +67,9 @@
   - dimension: title
     required_fields: [works.url]
     html: |
-      <a href="http://www.classicalmusicdb.com{{row["works.url"]}}" target="new">
+      <a href="//www.classicalmusicdb.com{{row["works.url"]}}" target="new">
         <img
-          src="http://www.classicalmusicdb.com/CMDB_favicon.gif"
+          src="://www.classicalmusicdb.com/CMDB_favicon.gif"
           style="height: 16px; width: 16px"
         >
         {{rendered_value}}
