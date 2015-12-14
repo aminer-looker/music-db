@@ -13,14 +13,14 @@
   - dimension: full_name
     required_fields: [composers.url]
     sql: concat(${TABLE}.first_name, ' ', ${TABLE}.last_name)
-    html: |
-      <a href="//www.classicalmusicdb.com{{row["composers.url"]}}" target="new">
-        <img
-          src="//www.classicalmusicdb.com/CMDB_favicon.gif"
-          style="height: 16px; width: 16px"
-        >
-        {{value}}
-      </a>
+#     html: |
+#       <a href="//www.classicalmusicdb.com{{row["composers.url"]}}" target="new">
+#         <img
+#           src="//www.classicalmusicdb.com/CMDB_favicon.gif"
+#           style="height: 16px; width: 16px"
+#         >
+#         {{value}}
+#       </a>
 
   - dimension: url
     hidden: true
