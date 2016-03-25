@@ -3,13 +3,11 @@
 
   - dimension: id
     primary_key: true
-    type: int
     hidden: true
 
   - dimension: catalog_name
 
   - dimension: collection_id
-    type: int
     hidden: true
 
   - dimension_group: composed
@@ -28,7 +26,6 @@
     sql: ${composed_year}
   
   - measure: composition_span
-    type: int
     sql: ${completed} - ${started}
   
   - dimension: period
@@ -42,14 +39,12 @@
       modern: ${TABLE}.composed_year BETWEEN 1910 AND YEAR(NOW())
 
   - dimension: composer_id
-    type: int
     hidden: true
 
   - dimension: difficulty
     type: number
 
   - dimension: instrument_id
-    type: int
     hidden: true
   
   - dimension: instrument
@@ -76,7 +71,6 @@
       </a>
 
   - dimension: type_id
-    type: int
     hidden: true
 
   - dimension: url

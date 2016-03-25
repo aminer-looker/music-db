@@ -3,7 +3,6 @@
 
   - dimension: id
     primary_key: true
-    type: int
     hidden: true
 
   - dimension: name
