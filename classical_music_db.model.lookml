@@ -7,7 +7,7 @@
   
 - explore: works
   always_filter:
-    composed_year: '-NULL'
+    composed_year: -NULL
   joins:
     - join: instruments
       foreign_key: instrument_id
