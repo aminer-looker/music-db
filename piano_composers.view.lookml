@@ -12,6 +12,8 @@
       JOIN instruments i ON w.instrument_id = i.id
       WHERE
         i.name like '%piano%'
+    indexes: [id]
+    persist_for: 24 hours
 
   fields:
   
