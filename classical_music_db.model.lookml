@@ -7,7 +7,7 @@
   
 - explore: works
   always_filter:
-    composed_year: '-NULL'
+    composed_year: 'NOT NULL'
   joins:
     - join: instruments
       foreign_key: instrument_id
@@ -20,3 +20,6 @@
 
     - join: collections
       foreign_key: collection_id
+    
+    - join: piano_composers
+      foreign_key: composer_id
