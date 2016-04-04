@@ -1,11 +1,11 @@
 - view: piano_composers
   derived_table:
     sql: |
-      SELECT
-        id,
-        first_name,
-        last_name,
-        url,
+      SELECT DISTINCT
+        c.id,
+        c.first_name,
+        c.last_name,
+        c.url
       FROM
         composers c
       JOIN works w ON w.composer_id = c.id
