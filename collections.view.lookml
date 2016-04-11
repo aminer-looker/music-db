@@ -21,6 +21,7 @@
         >
         {{value}}
       </a>
+    drill_fields: [title, composer.full_name, works.count]
 
   - dimension: url
     hidden: true
