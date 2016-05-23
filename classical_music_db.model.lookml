@@ -4,6 +4,7 @@
 - include: "*.dashboard.lookml"  # include all the dashboards
 
 - explore: composers
+  label: "Alpha bravo charlie delta echo foxtrot"
   
 - explore: works
   always_filter:
