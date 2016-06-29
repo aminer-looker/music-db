@@ -26,6 +26,7 @@
     sql: ${composed_year}
   
   - measure: composition_span
+    type: number
     sql: ${completed} - ${started}
   
   - dimension: period
