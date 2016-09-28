@@ -6,8 +6,8 @@
 - explore: composers
   
 - explore: works
-  always_filter:
-    composed_year: 'NOT NULL'
+#   always_filter:
+#     composed_year: 'NOT NULL'
   joins:
     - join: instruments
       foreign_key: instrument_id
