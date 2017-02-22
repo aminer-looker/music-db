@@ -80,6 +80,36 @@
   - measure: count
     type: count
     drill_fields: detail*
+  
+  - measure: ancient_count
+    type: count
+    filters:
+      period: 'ancient'
+  
+  - measure: medieval_count
+    type: count
+    filters:
+      period: 'medieval'
+  
+  - measure: baroque_count
+    type: count
+    filters:
+      period: 'baroque'
+  
+  - measure: classical_count
+    type: count
+    filters:
+      period: 'classical'
+  
+  - measure: romantic_count
+    type: count
+    filters:
+      period: 'romantic'
+  
+  - measure: modern_count
+    type: count
+    filters:
+      period: 'modern'
 
 
   # ----- Sets of fields for drilling ------
