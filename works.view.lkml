@@ -34,6 +34,7 @@ view: works {
   }
 
   dimension: period {
+    order_by_field: period_order
     case: {
       when: {
         sql: ${TABLE}.composed_year <= 476 ;;
@@ -68,6 +69,46 @@ view: works {
       when: {
         sql: ${TABLE}.composed_year BETWEEN 1910 AND YEAR(NOW()) ;;
         label: "modern"
+      }
+    }
+  }
+
+  dimension: period_order {
+    hidden: yes
+    case: {
+      when: {
+        sql: ${TABLE}.composed_year <= 476 ;;
+        label: "1. ancient"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 477 AND 1400 ;;
+        label: "2. medieval"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 1401 AND 1600 ;;
+        label: "3. renassaince"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 1600 AND 1750 ;;
+        label: "4. baroque"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 1751 AND 1820 ;;
+        label: "5. classical"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 1821 AND 1910 ;;
+        label: "6. romantic"
+      }
+
+      when: {
+        sql: ${TABLE}.composed_year BETWEEN 1910 AND YEAR(NOW()) ;;
+        label: "7. modern"
       }
     }
   }
