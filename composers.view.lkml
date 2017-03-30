@@ -10,7 +10,11 @@ view: composers {
   dimension: full_name {
     required_fields: [composers.url]
     sql: concat(${TABLE}.first_name, ' ', ${TABLE}.last_name) ;;
-    html: <a href="http://www.google.com/#q={{value}}">{{value}}</a> ;;
+    link: {
+      label: "{{rendered_value}}"
+      url: "https://en.wikipedia.org/w/index.php?search={{value}}"
+      icon_url: "https://www.google.com/favicon.ico"
+    }
   }
 
   dimension: url {

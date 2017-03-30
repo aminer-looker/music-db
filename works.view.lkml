@@ -143,14 +143,11 @@ view: works {
 
   dimension: title {
     required_fields: [works.url]
-    html: <a href="//www.classicalmusicdb.com{{row["works.url"]}}" target="new">
-        <img
-          src="://www.classicalmusicdb.com/CMDB_favicon.gif"
-          style="height: 16px; width: 16px"
-        >
-        {{rendered_value}}
-      </a>
-      ;;
+    link: {
+      label: "{{rendered_value}}"
+      url: "http://www.classicalmusicdb.com{{row['works.url']}}"
+      icon_url: "http://www.classicalmusicdb.com/CMDB_favicon.gif"
+    }
   }
 
   dimension: type_id {
@@ -164,6 +161,10 @@ view: works {
   measure: count {
     type: count
     drill_fields: [detail*]
+  }
+
+  measure: count_no_drill {
+    type: count
   }
 
   measure: ancient_count {
