@@ -71,6 +71,11 @@ view: works {
         label: "modern"
       }
     }
+    link: {
+      label: "{{rendered_value}}"
+      url: "https://en.wikipedia.org/w/index.php?search={{value}}+period+in+music"
+      icon_url: "https://en.wikipedia.org/favicon.ico"
+    }
   }
 
   dimension: period_order {

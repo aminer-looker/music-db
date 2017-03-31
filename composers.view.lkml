@@ -13,7 +13,7 @@ view: composers {
     link: {
       label: "{{rendered_value}}"
       url: "https://en.wikipedia.org/w/index.php?search={{value}}"
-      icon_url: "https://www.google.com/favicon.ico"
+      icon_url: "https://en.wikipedia.org/favicon.ico"
     }
   }
 
