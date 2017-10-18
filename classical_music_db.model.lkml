@@ -12,7 +12,7 @@ explore: works {
   always_filter: {
     filters: {
       field: composed_year
-      value: "NOT NULL"
+      value: "-NULL"
     }
   }
 
